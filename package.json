@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node index.js",
-    "debug": "nodemon index.js",
+    "start": "node index.js -r dotenv/config",
+    "debug": "nodemon index.js -r dotenv/config",
     "lint": "eslint **/*.js"
   },
   "keywords": [],
@@ -23,6 +23,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.2.5"
   }
 }
